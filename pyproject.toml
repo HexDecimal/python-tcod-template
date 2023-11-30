@@ -3,23 +3,13 @@ name = "tcod-template"
 readme = "README.md"
 license = { file = "LICENSE" }
 dynamic = ["version", "description"]
-requires-python = ">=3.11"
-
-[tool.black] # https://black.readthedocs.io/en/stable/usage_and_configuration/the_basics.html#configuration-via-a-file
-target-version = ["py311"]
-line-length = 120
-
-[tool.isort] # https://pycqa.github.io/isort/docs/configuration/options.html
-py_version = "311"
-line_length = 120
-profile = "black"
-skip_gitignore = true
+requires-python = ">=3.12"
 
 [tool.mypy] # https://mypy.readthedocs.io/en/stable/config_file.html
 files = "."
 exclude = ['^build/', '^\.']
 explicit_package_bases = true
-python_version = "3.11"
+python_version = "3.12"
 warn_unused_configs = true
 disallow_any_generics = true
 disallow_subclassing_any = true
@@ -36,7 +26,7 @@ no_implicit_reexport = true
 strict_equality = true
 
 [tool.ruff]
-# https://beta.ruff.rs/docs/rules/
+# https://docs.astral.sh/ruff/rules/
 select = [
     "C90", # mccabe
     "E",   # pycodestyle
@@ -69,8 +59,6 @@ ignore = [
     "S101",   # assert
     "ANN101", # missing-type-self
     "ANN102", # missing-type-cls
-    "D206",   # indent-with-spaces
-    "W191",   # tab-indentation
 ]
 line-length = 120
 
