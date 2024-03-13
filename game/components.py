@@ -1,4 +1,5 @@
 """Common component classes."""
+
 from __future__ import annotations
 
 from typing import Self
