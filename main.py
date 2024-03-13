@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """Main script."""
+
 from __future__ import annotations
 
 import tcod.console
