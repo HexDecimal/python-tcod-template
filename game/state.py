@@ -39,7 +39,6 @@ class State(Protocol):
 
     def on_event(self, event: tcod.event.Event) -> StateResult:
         """Handle tcod events and return state changes."""
-        return None
 
     def on_draw(self, console: tcod.console.Console) -> None:
         """Render the current state."""

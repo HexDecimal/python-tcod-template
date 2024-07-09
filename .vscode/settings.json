@@ -5,7 +5,7 @@
     ],
     "editor.formatOnSave": true,
     "editor.codeActionsOnSave": {
-        "source.fixAll": true,
+        "source.fixAll": "always"
     },
     "files.trimFinalNewlines": true,
     "files.insertFinalNewline": true,
@@ -17,6 +17,7 @@
         "editor.defaultFormatter": "charliermarsh.ruff"
     },
     "cSpell.words": [
+        "autoupdate",
         "cozette",
         "tcod",
         "tileset"

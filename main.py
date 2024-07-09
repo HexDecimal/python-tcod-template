@@ -36,7 +36,7 @@ def main() -> None:
             for event in tcod.event.wait():
                 match event:
                     case tcod.event.Quit():
-                        raise SystemExit()
+                        raise SystemExit
                 match g.states[-1].on_event(event):
                     case game.state.Push(new_state):
                         g.states.append(new_state)
