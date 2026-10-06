@@ -31,18 +31,17 @@ line-length = 120
 [tool.ruff.lint] # https://docs.astral.sh/ruff/rules/
 select = ["ALL"]
 ignore = [
-    "ANN101", # missing-type-self
-    "ANN102", # missing-type-cls
     "COM",    # flake8-commas
+    "CPY001", # missing-copyright-notice
     "E501",   # line-too-long
     "ISC001", # single-line-implicit-string-concatenation
     "S101",   # assert
     "S311",   # suspicious-non-cryptographic-random-usage
     "T10",    # flake8-debugger
     "T20",    # flake8-print
-    "TCH001", # typing-only-first-party-import
-    "TCH002", # typing-only-third-party-import
-    "TCH003", # typing-only-standard-library-import
+    "TC001",  # typing-only-first-party-import
+    "TC002",  # typing-only-third-party-import
+    "TC003",  # typing-only-standard-library-import
 ]
 
 [tool.ruff.lint.isort] # https://docs.astral.sh/ruff/settings/#lintisort
